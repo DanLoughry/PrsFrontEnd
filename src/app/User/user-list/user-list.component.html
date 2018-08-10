@@ -1,0 +1,29 @@
+<div>
+  <h3>User List</h3>
+</div>
+<div style="margin-left: 8.5rem">
+    <table class="table table-striped">
+      <thead class="thead-dark table-hover">
+      <tr>
+        <th *ngFor="let head of headers">{{ head }} </th>      
+      </tr>
+      </thead>
+      <tr *ngFor='let user of users'>
+        <td>{{user.Id }}</td>
+       <td>{{ user.Username }}</td>
+       <td>{{ user.Password }}</td>
+       <td>{{ user.Firstname }}</td>
+       <td>{{ user.Lastname }}</td>
+       <td>{{ user.Email }}</td>
+       <td>{{ user.Phone }}</td>
+       <td>{{ user.IsAdmin }}</td>
+       <td>{{ user.IsReviewer }}</td>
+       <td>{{ user.Active }}</td>
+       <td>
+          <span><a routerLink="/users/detail/{{user.Id}}">Detail</a> | </span>
+          <span><a routerLink="/users/edit/{{user.Id}}">Edit</a></span>
+       </td>
+      </tr>
+    </table>
+  </div>
+ 

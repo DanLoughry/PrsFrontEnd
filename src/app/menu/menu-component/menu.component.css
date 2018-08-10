@@ -1,0 +1,27 @@
+nav {
+    width:6rem;
+    background-color: slategrey;
+    padding: 5px;
+    height: 40rem;
+    position: fixed;
+
+}
+li {
+    nav-index: auto;   
+ 
+}
+h3 {
+    color: white;
+    font: medium;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ul {
+    text-align: center;
+}
+img {
+    height: 4rem;
+    width: 4rem;
+    align-content: center;
+}
+

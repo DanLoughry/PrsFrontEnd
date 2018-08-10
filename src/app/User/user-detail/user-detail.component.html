@@ -1,0 +1,10 @@
+<div>
+  <table *ngIf="user" class="table">    
+    <tr><th>Id</th><td>{{ user.Id }}</td></tr>
+    <tr><th>Name</th><td>{{ user.Firstname }} {{ user.Lastname }}</td></tr>
+    <tr><th>Username</th><td>{{ user.Username }}</td></tr>    
+  </table>
+</div><br>
+<div>  
+  <button (click)="remove()" class="btn btn-danger">Delete</button>
+</div>
